@@ -285,10 +285,10 @@
 		<<else>>
 			<<set $loveInterest.primary to "None">>
 		<</if>>
-		<span class="red">카일라는 감옥에 갇혔다. <<nnpc_He_ nun "Kylar">> 더 이상 당신의 연애 상대가아니다.</span>
+		<span class="red">카일라는 감옥에 갇혔다. <<nnpc_He_ nun "Kylar">> 더 이상 당신의 연애 상대가 아니다.</span>
 	<<elseif $loveInterest.secondary is "Kylar">>
 		<<set $loveInterest.secondary to "None">>
-		<span class="red">카일라는 감옥에 갇혔다. <<nnpc_He_ nun "Kylar">> 더 이상 당신의 연애 상대가아니다.</span>
+		<span class="red">카일라는 감옥에 갇혔다. <<nnpc_He_ nun "Kylar">> 더 이상 당신의 연애 상대가 아니다.</span>
 	<<elseif $kylarenglish gte 1>>
 		<span class="red">카일라는 감옥에 갇혔다. <<nnpc_He_ nun "Kylar">> 더 이상 당신과의 연애 상대라고 주장할 수 없다.</span>
 	<<else>>
@@ -435,18 +435,18 @@
 <</widget>>
 
 <<widget "kylarFlirtEventClothesPull">>
-	당신은 $worn.lower.name 를
+	당신은 하의를
 	<<if $worn.under_lower.type.includes("naked")>>
 		에 팽팽하게 당겨서, 당신 <<genitals>>의 윤곽을 드러낸다.
 	<<else>>
-		$worn.under_lower.name 를 팽팽하게 당겨서, 당신 <<genitals>>의 윤곽을 드러낸다.
+		팽팽하게 당겨서, 당신 <<genitals>>의 윤곽을 드러낸다.
 	<</if>>
 	<br><br>
 
 	<<if $worn.lower.plural>>
-		"새 $worn.lower.name 가 필요할 것 같아. 이건 너무 
+		"새 옷이 필요할 것 같아. 이건 너무 
 	<<else>>
-		"새 $worn.lower.name 가 필요할 것 같아. 이건 너무 
+		"새 옷이 필요할 것 같아. 이건 너무 
 	<</if>>
 	<<if $exhibitionism gte 75>>
 		커," 당신은 장난친다. "아무것도 제대로 보여주지 못하는걸!"
@@ -624,7 +624,7 @@
 		<br><br>
 
 		<<set $_breed to (playerCanBreedWith("Kylar") ? "breed" : "raise a family")>>
-		<<link [[네가 지구에 남은 최후의 인간일지라도 너와는 아이를 만들지 않을 거라고 카일라에게 말한다|Kylar Abduction Kids Insult]]>><</link>>
+		<<link [[네가 지구에 남은 최후의 인간일지라도 너와는 아이를 갖지 않을 거라고 카일라에게 말한다|Kylar Abduction Kids Insult]]>><</link>>
 		<br>
 		<<link [[이름들이 근사하다고 말한다|Kylar Abduction Kids Nice]]>><</link>>
 		<br>
@@ -1898,7 +1898,7 @@
 
 <<endevent>>
 
-You snuggle under the covers with Kylar.
+당신은 카일라와 함께 이불 속으로 파고든다.
 <<if $wraith.state and $wraithPrison and ($moonstate is "evening" or $moonstate is _nightstate)>>
 	당신은 불안을 느끼고, 당신의 눈이 거울로 향한다.
 <</if>>
@@ -2023,21 +2023,21 @@ You snuggle under the covers with Kylar.
 <<effects>>
 
 <<if $speech_attitude is "meek">>
-	"Don't be mean," you say. "I like Kylar."
+	"그렇게 못되게 굴지 마," 당신은 말한다. "난 카일라를 좋아해."
 <<elseif $speech_attitude is "bratty">>
-	"Yeah, I'm sleeping with <<nnpc_him "Kylar">>," you say. "What are you going to do about it?"
+	"그래, 난 얘랑 잤어," 당신은 말한다. "뭐 문제라도 있어?"
 <<else>>
-	"I choose who I spend my time with, not you," you say. "And I choose Kylar."
+	"내가 누구와 시간을 보낼지는 내가 정해, 네가 아니라," 당신은 말한다. "그리고 난 카일라를 선택했어."
 <</if>>
 <br><br>
 
-"Pfft, sure," the <<person>> says. "Doesn't change you getting down and dirty with <<nnpc_him "Kylar">>." <<He>> spat the word like it was mud in <<his>> mouth. "I guess you wouldn't mind if I told everyone!"
+"흥, 뭐 좋아," <<person>><<personpost "이">> 말한다. "그게 네가 <<nnpc_him "Kylar">>와 더럽게 뒹굴었다는 사실을 바꾸지는 않으니까." <<He_ nun>> 마치 입 속에 진흙이라도 든 것처럼 말을 내뱉는다. "내가 소문내고 다녀도 네겐 상관없는 일이겠네!"
 <br><br>
 
-<<He>> turns and leaves your room. Kylar mutters to <<person1>><<himself>>, but smiles at you, grateful.
+<<He_ nun>> 돌아서며 당신의 방을 나선다. 카일라는 혼잣말을 중얼거리지만, 이내 당신에게 고맙다는 듯 미소 짓는다.
 <br><br>
 
-"I should probably get going," <<he>> says. Despite that, <<he>> makes no move to get up.
+"이제 가야겠어," <<he_ ga>> 말한다. 그럼에도, <<he_ nun>>일어나려 하지 않는다.
 <br><br>
 
 <<link [[다음|Kylar Orphanage Cuddle]]>><</link>>
@@ -2046,32 +2046,32 @@ You snuggle under the covers with Kylar.
 <<effects>><<run statusCheck("Kylar")>>
 
 <<if $speech_attitude is "meek">>
-	You turn to Kylar. "How did you get in-"
+	당신은 카일라를 돌아본다. "너 어떻게 들어온 거야-"
 <<elseif $speech_attitude is "bratty">>
-	You turn to Kylar. "You fucking creep, get out-"
+	당신은 카일라를 돌아본다. "소름 끼치는 새끼, 나가-"
 <<else>>
-	You turn to Kylar. "Get out of my bed-"
+	당신은 카일라를 돌아본다. "내 침대에서 나가-"
 <</if>>
 <br><br>
 
-Your words are cut off by the <<persons>> loud laughter. "Oh my god, are you trying to cover for yourself? You're trying to cover for yourself!" <<He>> raises <<his>> hands to <<his>> head, talking in a low, mocking voice. "Oh, no, this isn't what it seems! <<nnpc_He "Kylar">> crept into my room and moved my arms around <<nnpc_him "Kylar">> while I was distracted!" <<He>> laughs harder.
+당신의 말은 <<persons>>의 큰 웃음소리에 가로막힌다. "아 미친, 너 지금 그걸 핑계라고 대는 거야? 아주 끝내주는 자기변호네!" <<He_ nun>> 자신의 머리에 손을 얹고, 낮게 비웃는 목소리로 이야기한다. "아, 맙소사, 이게 무슨 일이람! 내가 정신 팔린 사이 <<nnpc_He "Kylar">>가 방에 기어들어와서 내 팔로 <<nnpc_him "Kylar">>를 끌어안게 했어!" <<He_ ga>> 더 크게 웃어젖힌다.
 <<status -10>><<lcool>>
 <br><br>
 
-<<He>> turns to leave your room, and gives you a mocking salute. "I'm gonna go tell everyone just how much <<nnpc_he "Kylar">> forced <<nnpc_himself "Kylar">> on you! I'm sure they'll all believe you!" <<He>> leaves your room, shutting the door on the way out.
+<<He_ nun>> 돌아서서 당신의 방을 나서며, 당신에게 조롱하듯 경례한다. "<<nnpc_he "Kylar">>가 너에게 얼마나 심한 짓을 강요했는지 모두에게 말해줄게! 모두가 너를 믿어 줄 거라고 장담해!" <<He_ nun>> 문을 닫고 나가버린다.
 <br><br>
 
-You watch <<him>> leave for a moment, before turning to Kylar. You open your mouth to say something, but <<person1>><<he>> cuts you off. "You're that ashamed to be seen with me, huh." It's not a question.
+당신은 <<him_ ga>> 떠나는 것을 잠시 지켜보다가, 카일라를 돌아본다. 당신은 뭔가 말하기 위해 입을 열지만, <<person1>><<he_ nun>> 당신의 말을 자른다. "나랑 같이 있는 게 그렇게 부끄럽단 말이지, 하." 이건 질문이 아니다.
 <br><br>
 
 <<if _kylarStatus.includes("Rage")>>
-	<<He>> starts to untangle <<himself>> from you. Once <<his>> arms are free, <<he>> lunges at you, pinning you to the bed.
+	<<He_ nun>> 당신의 팔을 풀기 시작한다. <<he_ nun>> 자신의 팔이 자유로워지자마자 당신에게 달려들고, 침대에 밀어붙여 고정시킨다.
 	<br><br>
 
 	<<link [[다음|Kylar Orphanage Rape]]>><<set $molestationstart to 1>><</link>>
 
 <<else>>
-	<<He>> untangles <<himself>> from you and stands up from the bed. Before you can stop <<him>>, <<hes>> sprinting out of your room, covering <<his>> eyes.
+	<<He_ nun>> 당신의 팔을 풀고 침대에서 일어난다. 당신이 <<him_ rul>> 붙잡기도 전에, <<he_ nun>> <<his_ yi>> 눈을 가린 채로 방에서 뛰쳐나간다.
 	<br><br>
 
 	<<link [[다음|Bedroom]]>><</link>>
@@ -2080,13 +2080,13 @@ You watch <<him>> leave for a moment, before turning to Kylar. You open your mou
 :: Kylar Orphanage Slam
 <<effects>>
 
-You were having a great nap. You were comfortable, Kylar was warm, and it was overall a wonderful time. And this <<personsimple>> woke you from it, just because <<he>> didn't like Kylar? And on top of that, <<he>> said such horrible things about <<nnpc_him "Kylar">>? No, fuck that. Fuck <<him>>.
+당신의 낮잠은 훌륭했다. 당신은 편안했고, 카일라는 따듯했으며, 전반적으로 아주 근사한 시간이었다. 이 <<personsimple>><<personPost "은">> 단지 <<he_ ga>> 카일라를 싫어한다는 이유만으로 당신을 깨운 건가? 게다가, <<nnpc_him "Kylar">>에게 그런 끔찍한 말을 내뱉은 건가? 아니, 좆 까라지. 엿이나 먹어라.
 <br><br>
 
-You untangle yourself from Kylar and march to the door. The <<person>> backs up slightly from seeing you walk toward <<him>>, until <<hes>> just barely in the hallway. When you reach the door, you slam it in <<his>> face. You can hear <<him>> falling over on the other side.
+당신은 카일라를 감싸고 있던 팔을 풀고 문을 향해 나아간다. <<person>><<personPost "은">> 당신이 자신에게 걸어오는 것을 보며 뒤로 살짝 물러서다가 거의 복도로 삐져나간다. 문에 도달한 당신은 <<his_ yi>> 얼굴에 대고 문을 쾅 닫는다. 당신은 <<him_ ga>> 반대편에서 넘어지는 소리를 듣는다.
 <br><br>
 
-Content, you walk back to the bed. Kylar gazes at you with reverence. <<person1>><<Hes>> already sitting up, so rather than lying back down, you opt to hug Kylar sitting up. You pull <<him>> into your chest, and <<he>> leans into you.
+만족하며, 당신은 침대로 돌아온다. 카일라가 당신을 숭배하듯 바라본다. <<person1>><<He_ ga>> 이미 앉아 있었기에, 당신은 도로 눕는 대신 앉은 채로 카일라를 껴안기로 한다. 당신이 가슴에 끌어안자, <<he_ nun>> 당신에게 기댄다.
 <<glove>><<glust>>
 <br><br>
 
@@ -2104,12 +2104,12 @@ Content, you walk back to the bed. Kylar gazes at you with reverence. <<person1>
 	<<maninit>>
 	<<set $leftarm to "grappled">><<set $rightarm to "grappled">>
 	<<set $kylar.raped += 1>>
-	"You're ashamed to be seen with me?" Kylar whispers in your ear. "Well, nobody's watching."
+	"나랑 같이 있는 게 부끄러워?" 카일라가 당신의 귀에 속삭인다. "뭐, 지금은 아무도 안 보고 있네."
 	<br><br>
 <</if>>
 <<effects>>
 <<effectsman>>
-<<alarmstate 'You hear laughter on the other side of the bedroom door. <span class="red">누구도 당신을 도우러 오지 않는다.</span>'>>
+<<alarmstate '당신은 문 반대편에서 웃음소리를 듣는다. <span class="red">누구도 당신을 도우러 오지 않는다.</span>'>>
 <<man>>
 <<stateman>>
 <br><br>
@@ -2125,18 +2125,18 @@ Content, you walk back to the bed. Kylar gazes at you with reverence. <<person1>
 
 <<if $enemyarousal gte $enemyarousalmax>>
 	<<ejaculation>><<npcincr Kylar lust -20>>
-	<<He>> lies on top of you for a few moments, before pushing <<himself>> up. <<He>> looks down at you in satisfaction. A few seconds pass, and <<his>> satisfaction turns to horror. <<He>> looks down at you, then the blankets, then back to you. <<He>> slowly backs away from you, before turning and bolting from the room.
+	<<He_ nun>> 잠시 당신 위에 누워 있다가 몸을 밀어올린다. <<He_ nun>> 만족스럽게 당신을 내려다본다. 이윽고 <<his_ yi>> 만족감이 공포로 변한다. <<He_ nun>> 당신을 내려다보고, 이불을 보고, 다시 당신을 본다. <<He_ nun>> 천천히 당신에게서 물러나다가, 돌아서서 달아난다.
 	<br><br>
-	<<tearful>> you sit upright on the bed.
+	<<tearful>> 당신은 침대에 똑바로 앉는다.
 	<br><br>
 	<<clotheson>>
 	<<endcombat>>
 	<<link [[다음|Bedroom]]>><</link>>
 	<br>
 <<else>>
-	Kylar tumbles from the bed. <<He>> climbs to <<his>> feet, <<his>> face a mixture of anger and longing. <<His>> nerves get the better of <<him>>, and <<he>> bolts from the room.
+	카일라가 침대에서 굴러떨어진다. <<He_ nun>> 분노와 갈망이 뒤섞인 얼굴로 일어선다. 불안에 압도당한 듯, <<he_ nun>> 방에서 달아난다.
 	<br><br>
-	<<tearful>> you sit upright on the bed.
+	<<tearful>> 당신은 침대에 똑바로 앉는다.
 	<br><br>
 	<<clotheson>>
 	<<endcombat>>
@@ -2147,12 +2147,12 @@ Content, you walk back to the bed. Kylar gazes at you with reverence. <<person1>
 :: Kylar Orphanage Leave
 <<effects>>
 
-Kylar stops under the door frame on <<his>> way out.
+카일라는 나가는 길에 문틀 직전에서 멈춘다.
 <<if $phase is 1 or $kylarenglish gte 1>>
-	<<He>> quickly darts back in to kiss you one more time, then leaves without a sound.
+	<<He_ nun>> 재빨리 돌아와서 당신에게 한 번 더 키스하고, 소리 없이 떠난다.
 	<<arousal 600 "mouth">><<garousal>>
 <<else>>
-	<<He>> shoots you a longing look, then leaves without a sound.
+	<<He_ nun>> 당신을 갈망 어린 눈빛으로 바라보다가, 소리 없이 떠난다.
 <</if>>
 <br><br>
 
@@ -2162,7 +2162,7 @@ Kylar stops under the door frame on <<his>> way out.
 :: Kylar Park Walk
 <<set $location to "park">><<set $outside to 1>><<effects>>
 <<set $bus to "park">>
-You accompany Kylar to the park. <<He>> grasps your hand once outside the orphanage, and loudly refers to you as <<his>> <<girlfriend>> as others pass by.
+당신은 카일라와 함께 공원으로 간다. 고아원을 나서자 <<He_ nun>> 당신의 손을 잡고, 다른 사람들이 지나갈 때마다 당신이 <<his_ yi>> <<girlfriend>>라고 큰 소리로 말한다.
 <<if $phase is 1>><<He>> sounds giddy.<</if>>
 <br><br>
 
@@ -2171,7 +2171,7 @@ You accompany Kylar to the park. <<He>> grasps your hand once outside the orphan
 :: Kylar Arcade Walk
 <<set $location to "arcade">><<set $bus to "starfish">><<effects>>
 
-You accompany Kylar to the arcade. <<He>> grasps your hand once outside the orphanage, and loudly refers to you as <<his>> <<girlfriend>> as others pass by.
+당신은 카일라와 함께 오락실로 간다. 고아원을 나서자 <<He_ nun>> 당신의 손을 잡고, 다른 사람들이 지나갈 때마다 당신이 <<his_ yi>> <<girlfriend>>라고 큰 소리로 말한다.
 <<if $phase is 1>><<He>> sounds giddy.<</if>>
 <br><br>
 
@@ -2181,43 +2181,43 @@ You accompany Kylar to the arcade. <<He>> grasps your hand once outside the orph
 <<effects>><<set _kylar to statusCheck("Kylar")>>
 <<set $daily.kylar.invite to ($bus is "kylarmanor" ? "manor" : $location)>>
 
-You lean in again, and press your lips to Kylar's cheek, lingering for a few seconds. You can feel <<his>> cheek shift as <<he>> smiles. You're not done yet, though. You hold <<his>> head in place with one hand and kiss <<him>> again, this time a little lower, near the jawline. You keep kissing <<him>>, going over <<his>> chin and down <<his>> neck. <<His>> breathing becomes heavy.
+당신은 몸을 다시 기울이고, 카일라의 뺨에 입술을 댄 채 잠시 머문다. 당신은 <<he_ ga>> 미소 짓자 <<his_ yi>> 뺨이 움직이는 것을 느낄 수 있다. 그러나, 아직 끝나지 않았다. 당신은 한 손으로 <<his_ yi>> 머리를 고정한 뒤 다시 키스한다. 이번에는 좀 더 아래쪽, 턱선 근처에. 당신은 계속해서 <<him>>에게 키스하며, 턱을 지나 목으로 내려간다. <<His_ yi>> 호흡이 거칠어진다.
 <br><br>
 
-You rest your other hand on <<his>> _kylar.clothes.lower.name, right over <<his>> crotch, and press down gently. <<He>> gasps, and you take the opportunity to suck on the inside of <<his>> neck. The gasp turns into a desperate moan.
+당신은 다른 쪽 손을 <<his_ yi>> _kylar.clothes.lower.name, <<his_ yi>> 사타구니 바로 위에 올려놓고 부드럽게 누른다. <<He_ ga>> 헐떡이자, 당신은 <<his_ yi>> 목 안쪽을 빨아들일 기회를 잡는다. 헐떡임이 절박한 신음으로 변한다.
 <br><br>
 
 <<if $speech_attitude is "meek">>
-	"I want to make you feel good, Kylar," you murmur in <<his>> ear. "Won't you let me?"
+	"네 기분을 좋게 해 주고 싶어, 카일라," 당신은 <<his_ yi>> 귀에 대고 속삭인다. "허락해 주지 않을래?"
 <<elseif $speech_attitude is "bratty">>
-	"I wanna fuck you, Kylar," you murmur in <<his>> ear, giving it a little nip. "Wanna make you mine."
+	"널 따먹고 싶어, 카일라," 당신은 <<his_ yi>> 귀에 대고 속삭이며, 살짝 꼬집는다. "널 갖고 싶어."
 <<else>>
-	"I want to touch you, Kylar," you murmur in <<his>> ear. "Aaaaall over."
+	"너를 만지고 싶어, 카일라," 당신은 <<his_ yi>> 귀에 대고 속삭인다. "네 전부를."
 <</if>>
 <<promiscuity2>>
 
 <<if $bus is "kylarmanor">>
 	<<if _kylarStatus.includes("Lust")>>
-		Kylar whimpers, before placing <<his>> hands on your shoulders. "I-I need you," <<he>> says. "Please, please, please." <<He>> grinds against your hand.
+		카일라는 끙끙거리며 <<his_ yi>> 두 손으로 당신의 어깨를 붙잡는다. "네-네가 필요해," <<he_ ga>> 말한다. "제발, 제발, 제발." <<He_ nun>> 당신의 손에 자신의 허리를 치댄다.
 	<<else>>
-		Kylar whimpers, before placing a hand on your shoulder. "W-We can have sex right now," <<he>> says. "Anytime you want."
+		카일라는 끙끙거리며 한 손을 당신의 어깨에 얹는다. "우-우린 지금 당장 섹스할 수 있어," <<he_ ga>> 말한다. "네가 원한다면 언제든."
 	<</if>>
 <<else>>
 	<<if _kylarStatus.includes("Lust")>>
-		Kylar whimpers, before placing <<his>> hands on your shoulders. "I-I need you," <<he>> says. "We can find somewhere private, right?" <<He>> grinds against your hand.
+		카일라는 끙끙거리며 <<his_ yi>> 두 손으로 당신의 어깨를 붙잡는다. "네-네가 필요해," <<he_ ga>> 말한다. "우린 둘만의 장소를 찾을 수 있을 거야, 그렇지?" <<He_ nun>> 당신의 손에 자신의 허리를 치댄다.
 	<<else>>
-		Kylar whimpers, before placing a hand on your shoulder. "W-We can find somewhere private," <<he>> says. "Anywhere you want."
+		카일라는 끙끙거리며 한 손을 당신의 어깨에 얹는다. "우-우린 둘만의 장소를 찾을 수 있을 거야," <<he_ ga>> 말한다. "네가 원한다면 어디라도."
 	<</if>>
 <</if>>
 <br><br>
 
 <<if $location is "school">>
-	<<link [[Take Kylar to the bathrooms (0:05)|Kylar Tease Bathroom]]>><<unset $kylar_action>><<pass 5>><</link>><<promiscuous2>>
+	<<link [[카일라를 화장실로 데려간다 (0:05)|Kylar Tease Bathroom]]>><<unset $kylar_action>><<pass 5>><</link>><<promiscuous2>>
 <<elseif $bus is "kylarmanor">>
-	<<link [[Take Kylar to the bed|Manor Kylar Invite]]>><<unset $kylar_action>><<set $phase to 0>><</link>><<promiscuous2>>
+	<<link [[카일라를 침대로 이끈다|Manor Kylar Invite]]>><<unset $kylar_action>><<set $phase to 0>><</link>><<promiscuous2>>
 	<<if currentSkillValue('physique') gte $physiquesize>>
 		<br>
-		<<link [[Carry Kylar to the bed|Manor Kylar Invite]]>><<unset $kylar_action>><<set $phase to 1>><<npcincr Kylar lust 10>><</link>><<promiscuous2>><<gglust>>
+		<<link [[카일라를 침대로 옮긴다|Manor Kylar Invite]]>><<unset $kylar_action>><<set $phase to 1>><<npcincr Kylar lust 10>><</link>><<promiscuous2>><<gglust>>
 	<</if>>
 <<else>>
 	<<link [[카일라를 고아원으로 초대한다 (0:15)|Kylar Invite]]>><<unset $kylar_action>><<pass 15>><</link>><<promiscuous2>>
@@ -2229,20 +2229,20 @@ You rest your other hand on <<his>> _kylar.clothes.lower.name, right over <<his>
 :: Kylar Tease 2 Decline
 <<run statusCheck("Kylar")>>
 <<if $speech_attitude is "meek">>
-	"S-sorry," you say, leaning away from <<him>>. "Not now."
+	"미-미안," 당신은 <<him>>에게서 멀어지며 말한다. "지금은 말고."
 <<elseif $speech_attitude is "bratty">>
-	You shake your head and remove your hand. "I changed my mind. Sorry to disappoint."
+	당신은 고개를 저으며 손을 치운다. "마음이 바뀌었어. 실망시켜서 미안."
 <<else>>
-	You remove your hand and frown. "Sorry," you say, "I'm not in the mood anymore."
+	당신은 손을 치우고 찡그린다. "미안," 당신이 말한다. "더는 그럴 기분이 아니야."
 <</if>>
 <br><br>
 
-"But then why-" Kylar frowns, looking at you in betrayal.
+"하지만, 그러면 왜-" 카일라는 찌푸리며, 배신감에 찬 얼굴로 당신을 바라본다.
 <<if !_kylarStatus.includes("Calm")>>
-	<<His>> grip on your shoulders tightens for a moment and <<he>> scowls, but eventually <<he>> lets go of you. <<He>> avoids looking at you.
+	<<He_ nun>> 당신의 어깨를 세게 움켜쥐고 잠시 노려보다가, 결국 놓아준다.
 	<<pain 3>><<stress 6>><<gpain>><<gstress>>
 <<else>>
-	<<He>> hangs <<his>> head and lets go of you. <<He>> avoids looking at you.
+	<<He_ nun>> 고개를 숙인 채 당신을 놓아준다. <<He_ nun>> 당신을 보려 하지 않는다.
 <</if>>
 <br><br>
 
@@ -2252,10 +2252,10 @@ You rest your other hand on <<his>> _kylar.clothes.lower.name, right over <<his>
 <<set $outside to 0>><<set $location to "school">><<schooleffects>><<effects>>
 <<set _kylar to statusCheck("Kylar")>>
 
-You lean close, and whisper your invite into Kylar's ear. <<He>> shivers.
+당신은 몸을 숙이고, 카일라의 귓가에 초대하겠다고 속삭인다. <<He_ nun>> 바르르 떤다.
 <<promiscuity2>>
 
-Kylar hugs your arm on the walk over, as if afraid you'll run. The halls are empty, and you reach the bathrooms without anyone noticing you.
+걸어가는 동안, 카일라는 마치 당신이 달아날까봐 두려운 것처럼 당신의 팔을 꼭 껴안는다. 복도는 텅 비어 있다. 당신은 누구에게도 들키지 않고 화장실에 도착한다.
 <<if ($player.penisExist and $player.vaginaExist) or ($backgroundTraits.includes("crossdresser") and $player.gender isnot $player.gender_appearance)>>
 	<<set $kylarBathroomGender to $player.gender_appearance>>
 <<else>>
@@ -2264,17 +2264,17 @@ Kylar hugs your arm on the walk over, as if afraid you'll run. The halls are emp
 <<if $kylarBathroomGender isnot _kylar.pronoun>>
 	<<set _boy to ($kylarBathroomGender is "m" ? "boy" : "girl")>>
 	<<if $submissive gte 1150 + random(0,250) + _kylar.lust>>
-		<<He>> hesitates a bit when you approach the _boy's bathroom.
-		"Umm, c-could we use the <<print (_kylar.pronoun is "m" ? "boy": "girl")>>'s room instead?"
+		<<He_ nun>> 당신이 _boy 화장실에 들어가자 약간 주저한다.
+		"음, 대-대신 <<print (_kylar.pronoun is "m" ? "남학생": "여학생")>> 화장실로 가면 안 될까?"
 		<<set $kylarBathroomGender to _kylar.pronoun>>
-		You don't refuse.
+		당신은 거절하지 않는다.
 	<<else>>
-		<<He>> hesitates a bit when you walk into the _boy's bathroom, but follows you anyway.
+		<<He_ nun>> 당신이 _boy 화장실에 들어가자 약간 주저하지만, 어쨌든 당신을 따라온다.
 	<</if>>
 <</if>>
 <br><br>
 
-The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> undressing you before you've even closed the stall door.
+화장실은 텅 비어 있다. 당신은 화장실 칸에 들어가서 카일라를 끌어들인다. <<He_ nun>> 당신이 문을 닫기도 전에 당신을 벗기기 시작한다.
 <br><br>
 
 <<link [[다음|Kylar Bathroom Sex]]>><<set $sexstart to 1>><</link>>
@@ -2306,31 +2306,31 @@ The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> u
 <<set $outside to 0>><<effects>>
 <<if $enemyarousal gte $enemyarousalmax>>
 	<<ejaculation>><<npcincr Kylar lust -20>>
-	Kylar rests against you, staring into your eyes. "Thank you," <<he>> says. "I needed that." <<His>> hair is disheveled, but <<he>> doesn't seem to care.
+	카일라는 당신에게 기댄 채 당신의 눈을 응시한다. "고마워," <<he_ ga>> 말한다. "이게 필요했어." <<His_ yi>> 머리카락이 헝클어졌지만, <<he_ nun>> 신경 쓰지 않는 것 같다.
 	<<lllust>>
 	<br><br>
 
 	<<if $orgasmcurrent is 0 and !playerChastity()>>
 		<<if _kylarStatus.includes("Rage")>>
-			After a few seconds, <<he>> kneels down in front of you. "You didn't cum," <<he>> murmurs. "Was I... not good enough?" <<He>> shakes <<his>> head violently. "I'll make up for it. I'll show you."
+			몇 초 후, <<he_ 는>> 당신 앞에 무릎 꿇는다. "너는 가버리지 못 했잖아," <<he_ 가>> 중얼거린다. "내가... 충분하지 못해서 그런 거야?" <<He_ 는>> 난폭하게 고개를 흔든다. "내가 만회할 거야. 보여줄게."
 		<<else>>
-			After a few seconds, <<he>> kneels down in front of you. "You didn't get to cum," <<he>> murmurs. "That's not fair to you. You're the one that invited me. Here, I'll make it up."
+			몇 초 후, <<he_ 는>> 당신 앞에 무릎 꿇는다. "너는 가버리지 못 했잖아," <<he_ 가>> 중얼거린다. "너한테 불공평해. 날 초대한 건 너잖아. 자, 내가 보상해줄게."
 		<</if>>
 		<br><br>
 		<<kylarFinish>>
 	<</if>>
 
 <<elseif $enemyhealth lte 0>>
-	"Ow!" Kylar collapses against the stall door. "D-did I do something wrong?"
+	"아야!" 카일라는 문에 부딪히며 쓰러진다. "내-내가 뭔가 잘못했어?"
 	<<lllove>><<npcincr Kylar love -3>>
 	<br><br>
-	<<tearful>> you stand up and inch away from <<him>>.
+	<<tearful>> 당신은 몸을 일으키며 <<he>>에게서 한 발짝 멀어진다.
 	<br><br>
 
 <<else>>
-	"D-did I do something wrong?" Kylar asks as <<he>> pulls away from you.
+	"내-내가 뭔가 잘못했어?" 카일라는 당신에게서 몸을 물리며 묻는다.
 	<br><br>
-	<<tearful>> you stand up.
+	<<tearful>> 당신은 일어선다.
 	<br><br>
 <</if>>
 
@@ -2339,9 +2339,9 @@ The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> u
 <<npc Kylar>><<person1>>
 
 <<if Time.hour isnot 12>>
-	<<He>> looks at <<his>> watch. "I need to go," <<he>> says. "I'll be late for my lessons." <<He>> keeps looking over <<his>> shoulder as <<he>> walks out.
+	<<He_ nun>> <<his_ yi>> 시계를 보더니, 이제 가야한다고 말한다. "수업에 늦겠어." <<He_ nun>> 가는 길에도 당신을 어깨너머로 계속 쳐다본다.
 	<<if $kylarBathroomGender isnot _kylar.pronoun and random(1,100) lte 75>>
-		<<He>> flinches upon hearing laughter from the halls. Somebody saw <<him>> come out of the <<print ($kylarBathroomGender is "m" ? "boy" : "girl")>>'s bathroom.
+		<<He_ nun>> 복도에서 웃음소리가 들려오자 움찔한다. 누군가가 <<print ($kylarBathroomGender is "m" ? "남학생" : "여학생")>> 화장실에서 나오는 <<him_ rul>> 봤다.
 	<</if>>
 	<br><br>
 
@@ -2349,7 +2349,7 @@ The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> u
 	<<link [[다음|_destination]]>><<endevent>><</link>>
 
 <<else>>
-	"Let's go back to the <<print ($weather is "rain" or $weather is "snow" ? "library" : "courtyard")>>," <<he>> says.
+	"<<print ($weather is "rain" or $weather is "snow" ? "도서관" : "뒷마당")>>으로 돌아가자," <<he_ ga>> 말한다.
 	<br><br>
 	<<link [[다음|Kylar Bathroom Return]]>><</link>>
 <</if>>
@@ -2359,10 +2359,10 @@ The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> u
 :: Kylar Bathroom Return
 <<if $weather is "rain" or $weather is "snow">>
 	<<set $outside to 0>><<set $location to "school">><<schooleffects>><<effects>><<set $bus to "schoollibrary">>
-	You and Kylar return to your spots at the library.
+	당신과 카일라는 도서관의 자리로 돌아간다.
 <<else>>
 	<<set $outside to 1>><<set $location to "school">><<schooleffects>><<effects>><<set $bus to "schoolrearcourtyard">>
-	You and Kylar return to the stump in the rear courtyard.
+	당신과 카일라는 뒷마당의 나무 그루터기로 돌아간다.
 <</if>>
 <br><br>
 
@@ -2378,72 +2378,72 @@ The bathroom is empty. You make your way to a stall and pull Kylar in. <<Hes>> u
 <<set _kylarLower to _kylar.clothes.lower.name>><<set _kylarUnderLower to $daily.kylar.underwear.simpleDesc>>
 
 <<if $speech_attitude is "meek">>
-	"This might be weird, but... can I have your _kylarUnderLower?" you ask, blushing.
+	"이상하게 들릴지도 모르겠지만…네 _kylarUnderLower, 내게 줄 수 있어?" 당신은 얼굴을 붉히며 묻는다.
 <<elseif $speech_attitude is "bratty">>
-	"Cute _kylarUnderLower," you say. "I'll take them."
+	"그 _kylarUnderLower, 귀엽네," 당신이 말한다. "내가 가져야겠어."
 <<else>>
-	"Can you give me your _kylarUnderLower?" you ask.
+	"네 _kylarUnderLower, 나한테 줄 수 있어?" 당신이 묻는다.
 <</if>>
 <<promiscuity3>>
 
-Kylar balks at your words, looking at you nervously. "W-what?"
+카일라는 당신의 말에 멈칫하며, 초조한 표정으로 당신을 바라본다. "뭐-뭐라고?"
 <br><br>
 
 <<if $kylarSeen.includes("home")>>
-	"It's only fair, since you took mine," you say. "...I think. Please?"
+	"네가 내 걸 가져갔으니, 그냥 공평한 거야," 당신이 말한다. "...내 생각에는 그래. 부탁이야."
 	<br><br>
 
-	You notice <<he>> makes no move to deny your accusation.
+	당신은 <<he_ ga>> 당신이 읊은 죄목을 부인하지 않는다는 사실을 알아차린다.
 <<else>>
-	"I just... want them," you say. "Please?"
+	"그냥... 갖고 싶어," 당신이 말한다. "부탁이야."
 	<br><br>
 <</if>>
 
 <<if _kylarLower.includes("skirt") and _kylar.penis isnot "none">>
-	"But... I-I'm wearing a skirt," <<he>> says in a hushed tone, fearful of being overheard.
+	"하지만... 나-난 치마 입고 있는데," <<he_ nun>> 다른 사람이 엿듣는 것을 걱정하듯 조용히 말한다.
 	<<if _kylar.penissize gte 3>>
-		"If I take off my _kylarUnderLower, m-my skirt won't cover my... You know..."
+		"내가 속옷을 벗으면, 내-내 치마가 그걸 가리지 못할 거야... 알잖아..."
 	<<else>>
-		"If I take off my _kylarUnderLower, people c-could see m-my... You know..."
+		"내가 속옷을 벗으면, 사-사람들이 볼 거야. 내-내... 알잖아..."
 	<</if>>
 	<br><br>
 
 	<<if $speech_attitude is "meek">>
-		"Yeah, but... Isn't that exciting?" you respond.
+		"그래, 하지만... 신나지 않을까?" 당신은 대답한다.
 	<<elseif $speech_attitude is "bratty">>
-		"That shouldn't be a problem if you try not to get hard, then," you respond curtly.
+		"네가 그렇게 딱딱거리지 않으면 아무 문제도 없겠지, 그럼," 당신은 퉁명스레 답한다.
 	<<else>>
-		"Yeah. Isn't that exciting?" you respond, ignoring <<his>> concerns.
+		"그렇겠지. 신나지 않을까?" 당신은 <<his_ yi>> 걱정을 무시하며 대답한다.
 	<</if>>
 	<br><br>
 
-	Whimpering, Kylar quickly looks around to make sure <<he>> has privacy. Once <<hes>> sure nobody's watching,
-	<<he>> reaches under <<his>> _kylarLower and slides <<his>> $daily.kylar.underwear.colourDesc down <<his>> legs.
-	As <<he>> raises <<his>> legs to step out of the _kylarUnderLower, you can clearly see
+	끙끙대다가, 카일라는 주변을 빠르게 둘러보며 다른 사람이 자신을 보고 있는지 확인한다.
+	<<he_ nun>> _kylarLower 아래로 손을 뻗어 <<his_ yi>> 속옷을 다리 아래로 밀어낸다.
+	<<he_ ga>> 다리를 들어 _kylarUnderLower 밖으로 발을 뻗자,
 	<<if _kylar.penissize gte 3>>
-		the flaccid length of <<his>> _kylar.penisdesc hanging freely beneath <<his>> skirt.
+		당신은 치마 아래로 자연스럽게 늘어진 <<his_ yi>> 발기하지 않은 _kylar.penisdesc 길이를 분명하게 볼 수 있다.
 	<<else>>
-		<<his>> flaccid penis beneath <<his>> skirt.
+		<<his_ yi>> 늘어진 자지가 치맛자락으로 가려진다.
 	<</if>>
 <<else>>
-	Biting <<his>> lip, Kylar quickly looks around to make sure <<he>> has privacy. Once <<hes>> sure nobody's watching,
+	입술을 깨물며, 카일라는 주변을 빠르게 둘러보고 다른 사람이 자신을 보고 있는지 확인한다. 아무도 보고 있지 않다는 것을 확인하자,
 	<<if _kylarLower.includes("skirt")>>
-		<<he>> reaches under <<his>> _kylarLower and pulls off <<his>> $daily.kylar.underwear.colourDesc.
+		<<he_ nun>> _kylarLower 아래로 손을 넣어 <<his_ yi>> 속옷을 벗는다.
 	<<else>>
-		<<he>> lifts <<his>> _kylarLower and, in a complex manoeuvre you can't quite follow, manages to remove <<his>> $daily.kylar.underwear.colourDesc without removing <<his>> _kylarLower.
+		<<he_ nun>> 하의를 들어 올리고, 당신이 도저히 따라갈 수 없는 복잡한 동작으로 <<his_ yi>> 하의를 벗지 않은 채 속옷을 벗는 것에 성공한다.
 	<</if>>
 <</if>>
 <br><br>
 
-<<He>> averts <<his>> eyes and hands <<his>> _kylarUnderLower to you in a bunch. They're still warm.
+<<He_ nun>> 시선을 피하며, 자신의 속옷 뭉치를 당신에게 건넨다. 아직 따듯하다.
 <<arousal 600>><<garousal>>
 <br><br>
 
 <<underlowersend $daily.kylar.underwear.id wardrobe $daily.kylar.underwear.colour $daily.kylar.underwear.colourAcc>>
 
-<<link [[Thank Kylar|Kylar Tease Underwear Thank]]>><<npcincr Kylar love 1>><</link>><<glove>>
+<<link [[카일라에게 고맙다고 한다|Kylar Tease Underwear Thank]]>><<npcincr Kylar love 1>><</link>><<glove>>
 <br>
-<<link [[Ask Kylar to go commando|Kylar Tease Underwear Commando]]>><<npcincr Kylar lust 5>><</link>><<gglust>>
+<<link [[카일라에게 앞으로도 계속 속옷을 입지 말라고 한다|Kylar Tease Underwear Commando]]>><<npcincr Kylar lust 5>><</link>><<gglust>>
 
 :: Kylar Tease Underwear Thank
 <<effects>>
@@ -2452,22 +2452,22 @@ Kylar balks at your words, looking at you nervously. "W-what?"
 <<set $daily.kylar.undies to true>>
 
 <<if $speech_attitude is "meek">>
-	"Thank you," you say, holding the _kylarUnderLower to your chest. "I'll treasure these."
+	"고마워," 당신은 속옷을 품에 안은 채 말한다. "소중히 간직할게."
 	<br><br>
 
-	Kylar smiles in response, shuffling to get comfortable with the sudden breeze.
+	카일라는 미소로 답하며, 갑작스러운 바람에 익숙해지려는 듯 발을 이리저리 움직인다.
 <<elseif $speech_attitude is "bratty">>
-	"Thanks," you say, holding the _kylarUnderLower. "These'll come in handy later."
+	"고마워," 당신은 카일라의 속옷을 손에 쥔 채 말한다. "나중에 유용하게 쓸게."
 	<br><br>
 
-	Kylar smiles in response, shuffling to get comfortable with the sudden breeze on <<his>> privates.
+	카일라는 미소로 답하며, <<his_ yi>> 은밀한 곳에 부는 갑작스러운 바람에 익숙해지려는 듯 발을 이리저리 움직인다.
 	The implications of what you said hit <<him>> a few seconds later, and <<he>> blushes bright red.
 	<<npcincr Kylar lust 1>><<glust>>
 <<else>>
-	"Thanks, Kylar," you say, smiling. "I know it was a weird thing to ask."
+	"고마워, 카일라," 당신은 웃으며 말한다. "이상한 부탁이었다는 거 알아."
 	<br><br>
 
-	Kylar smiles in response and waves off your concerns, shuffling to get comfortable with the sudden breeze.
+	카일라는 미소로 답하며 당신의 걱정을 덜어주고, 갑작스러운 바람에 익숙해지려는 듯 발을 이리저리 움직인다.
 <</if>>
 <br><br>
 
@@ -2481,21 +2481,21 @@ Kylar balks at your words, looking at you nervously. "W-what?"
 <<set _kylarUnderLower to (nullable($daily.kylar.underwear).simpleDesc || "underwear")>>
 
 <<if $speech_attitude is "meek">>
-	"Thank you," you say, holding the _kylarUnderLower to your chest. You blush. "Can you, um... stay like this? Tomorrow and, uh, later?"
+	"고마워," 당신은 속옷을 품에 안은 채 말한다. 당신은 얼굴을 붉힌다. "너, 음... 앞으로도 이렇게 다녀줄 수 있어? 내일 그리고, 어, 나중에도?"
 <<elseif $speech_attitude is "bratty">>
-	"Thanks," you say, holding the _kylarUnderLower. "Now don't put any on tomorrow. Or again."
+	"고마워," 당신은 카일라의 속옷을 손에 쥔 채 말한다. "내일부터는 이제 아무것도 입지 마. 다시는."
 <<else>>
-	"Thanks, Kylar," you say, smiling. "Can you not wear more anymore?"
+	"고마워, 카일라," 당신은 웃으며 말한다. "앞으로도 계속 안 입고 다녀줄래?"
 <</if>>
 <br><br>
 
-Kylar smiles, but freezes half a second later. "<<if $speech_attitude is "bratty">>Don't...<<else>>Can I...<</if>> what? You want me to... go b-bare?!"
+카일라는 미소 짓지만, 직후 얼어붙는다. "<<if $speech_attitude is "bratty">>무슨...<<else>>내가...<</if>> 뭐? 너 내가... 버, 벌거벗고 다니기를 원하는 거야?!"
 <br><br>
 
-You nod, and <<he>> blushes. You think <<hes>> going to turn you down, but <<he>> whispers, "O-okay," so quiet you could barely hear it. "If it makes you happy, I'll... I'll go bare for you."
+당신이 끄덕이자, <<he_ nun>> 얼굴을 붉힌다. 당신은 <<he_ ga>> 거절할 거라고 생각했지만, <<he_ nun>> 끙끙댄다. "아-알았어," 너무 작아서 당신이 겨우 들을 수 있을 정도의 목소리로. "네가 그걸로 행복하다면, 나는... 나는 너를 위해 벗고 다닐 거야."
 <br><br>
 
-<<He>> seems embarrassed, so you lean in and kiss <<him>> on the cheek. <<He>> doesn't become any less embarrassed, but offers you a smile.
+<<He_ nun>> 당황스러워 보인다. 그래서, 당신은 몸을 기울여 <<his_ yi>> 뺨에 키스한다. <<He_ nun>> 여전히 당황스러워 보이지만, 당신에게 미소를 지어 보인다.
 <br><br>
 
 <<set $daily.kylar.underwear to {}>> <!-- this ensures that kylar won't generate new underwear today -->
@@ -2666,70 +2666,70 @@ You nod, and <<he>> blushes. You think <<hes>> going to turn you down, but <<he>
 		<<if (_tf.angelHalo or _tf.fallenAngelHalo) and _tfSplit is 0>>
 			잠시 후, <<his_ yi>> 눈이 당신의 <<if $fallenangel>>부서진<</if>> 광륜으로 향하고, <<he_ nun>> 천천히 <<his_ yi>> 손을 올려 만지려 한다.
 			<<his_ yi>> 손에 아무것도 닿지 않자 <<His_ yi>> 눈썹을 찌푸리고, <<he_ nun>> 눈을 가늘게 떠 당신 머리 위의 허공을 본다.
-			"I could've sworn there was..." <<He>> retracts <<his>> hand and returns to stroking your hair, a confused frown on <<his>> face.
+			"분명 여기에 있었는데..." <<He_ nun>> 손을 거두고 당신의 머리카락을 다시 쓰다듬기 시작한다. <<his_ nun>> 혼란스러운 듯 얼굴을 찡그린다.
 			<br><br>
 		<<elseif _tf.demonHorns and _tf.cowHorns>>
-			After a while, <<he>> reaches up and pokes your demon horns. "Are these real?" <<he>> asks.
-			"What about these ones?" <<His>> hand drifts down to your cow horns.
-			For a few minutes, <<he>> alternates between the two sets, sometimes stroking, sometimes tapping.
+			잠시 후, <<he_ nun>> 손을 뻗어 당신의 악마 뿔을 찔러본다. "이거 진짜야?" <<he_ ga>> 묻는다.
+			"그러면 이건?" <<His_ yi>> 손이 소뿔로 내려간다.
+			몇 분 동안, <<he_ nun>> 두 쌍의 뿔을 번갈아 가며 쓰다듬거나 두드려 본다.
 			<br><br>
 		<<elseif (_tf.demonHorns and _tfSplit is 0) or (_tf.cowHorns and _tfSplit is 1)>>
-			After a while, <<he>> reaches up and pokes your horns. "Are these real?" <<he>> asks.
-			For a few minutes, <<he>> alternates between stroking and tapping your horns, seemingly entranced.
+			잠시 후, <<he_ nun>> 손을 뻗어 당신의 뿔을 찔러본다. "이거 진짜야?" <<he_ ga>> 묻는다.
+			몇 분 동안, <<he_ nun>> 매혹된 것처럼 당신의 뿔을 번갈아 가며 쓰다듬거나 두드려 본다.
 			<br><br>
 		<<elseif (_tf.wolfEars or _tf.catEars) and _tfSplit is 1>>
-			After a while, <<his>> hand brushes against your <<print (_tf.wolfEars ? "wolf" : "cat")>> ears.
-			You shiver, <<print (_tf.wolfEars ? "whining" : "purring")>> at <<his>> touch.
-			<<He>> smiles. "Are they sensitive?" For a few minutes, <<he>> scratches around your ears, blowing into them at one point.
+			잠시 후, <<his_ yi>> 손이 당신의 <<print (_tf.wolfEars ? "늑대" : "고양이")>> 귀를 스친다. 
+			당신은 부르르 떨며, <<his_ yi>> 손길에 <<print (_tf.wolfEars ? "낑낑거린다" : "그르렁거린다")>>.
+			<<He_ nun>> 미소 짓는다. "민감한 거야?" 몇 분 동안, <<he_ nun>> 당신의 귀 주변을 긁어주다가, 어느 시점에서 그 안에 숨을 불어넣는다.
 			<<if _tf.wolfTail or _tf.catTail>>
-				Your tail <<print (_tf.wolfTail ? "wags happily" : "swishes in contentment")>>, brushing against <<him>> on occasion.
+				당신의 꼬리가 <<print (_tf.wolfTail ? "행복하게 흔들리며" : "만족스럽게 휙 움직이며")>>, 이따금 <<he_ rul>> 스친다.
 			<</if>>
 			<br><br>
 		<<elseif _tf.foxEars and _tfSplit is 1>>
-			After a while, <<his>> hand brushes against your fox ears. It wiggles at <<his>> touch.
-			<<He>> smiles. "Are they sensitive?" For a few minutes, <<he>> scratches around your ears, blowing into them at one point.
+			잠시 후, <<his_ yi>> 손이 당신의 여우 귀를 스친다. 그것은 <<his_ yi>> 손길에 씰룩거린다.
+			<<He_ nun>> 미소 짓는다. "민감한 거야?" 몇 분 동안, <<he_ nun>> 당신의 귀 주변을 긁어주다가, 어느 시점에서 그 안에 숨을 불어넣는다.
 			<<if _tf.foxTail>>
-				Your tail swishes up and down, brushing against <<him>> on occasion.
+				당신의 꼬리가 위아래로 흔들리며, 이따금 <<he_ rul>> 스친다.
 			<</if>>
 			<br><br>
 		<<elseif _tf.birdPlumage and _tfSplit is 1>>
-			After a while, <<he>> brings <<his>> other hand to you and brushes your plumage. "Are these feathers?" <<he>> asks.
-			For a few minutes, <<he>> strokes your hair with one hand and your plumage with the other.
+			잠시 후, <<he_ nun>> 반대쪽 손을 당신에게 가져다 대며 당신의 깃털을 쓰다듬는다. "이거 깃털이야?" <<he_ ga>> 묻는다.
+			몇 분 동안, <<he_ nun>> 한 손으로는 당신의 머리카락을, 다른 손으로는 당신의 깃털을 쓰다듬는다.
 			<<if $player.perceived_breastsize gte 3 or $player.gender_appearance is "f" or ($player.gender is "f" and $genderknown.includes("Kylar"))>>
-				At one point, <<his>> hand brushes against your chest, and <<he>> flinches back.
-				"S-sorry, I didn't mean to... sorry." After that, <<he>> sticks to looking at your plumage, not touching.
+				한순간 <<his_ yi>> 손이 당신의 가슴을 쓰다듬었고, <<he_ nun>> 움찔하며 뒤로 물러난다.
+				"미-미안, 그러려던 게... 미안." 그 뒤로, <<he_ nun>> 당신의 깃털을 만지지 않고 바라보는 것에만 집중한다.
 			<</if>>
 			<br><br>
 		<</if>>
-		Eventually, <<he>> withdraws <<his>> hand and smiles at you. "Thanks. Your hair is so soft," <<he>> says.
+		결국, <<he_ nun>> 손을 거두고 당신에게 미소 짓는다. "고마워. 네 머리카락은 정말 부드럽네," <<he_ ga>> 말한다.
 	<</if>>
 <<else>>
 	<<if $rng gte 91>>
-		You try to encourage <<him>> to talk, but <<hes>> content to listen.
+		당신은 <<he_ ga>> 이야기하도록 격려하지만, <<he_ nun>> 당신의 말을 듣는 것으로 만족한다.
 	<<elseif $rng gte 81>>
-		You ask if <<hes>> having a nice day. <<He>> doesn't respond.
+		당신은 <<he>>에게 좋은 하루를 보냈냐고 묻는다. <<He_ nun>> 대답이 없다.
 	<<elseif $rng gte 71>>
-		You make small talk. <<He>> nods along and makes unintelligible noises.
+		당신은 잡담한다. <<He_ nun>> 고개를 끄덕이며, 당신이 알아들을 수 없는 소리를 낸다.
 	<<elseif $rng gte 61>>
-		You compliment <<his>> hair. <<He>> pats <<his>> own head and smiles at the <<if $bus is "schoollibrary" or $bus is "starfish">>floor<<else>>ground<</if>>.
+		당신은 <<his_ yi>> 머리카락을 칭찬한다. <<He_ nun>> 자신의 머리를 쓰다듬으며 <<if $bus is "schoollibrary" or $bus is "starfish">>바닥을 향한 채 미소 짓는다<<else>>땅을 향한 채 미소 짓는다<</if>>.
 	<<elseif $rng gte 51>>
-		You tell some jokes. <<He>> mumbles laughter, but doesn't look at you.
+		당신은 몇몇 농담을 던진다. <<He_ nun>> 중얼거리며 웃지만, 당신을 바라보지는 않는다.
 	<<elseif $rng gte 41>>
-		You comment on how nice the weather is. <<He>> nods absently, <<if $weather is "clear" or $weather is "overcast">>silent<<else>>before blinking and looking at you incredulously<</if>>.
+		당신은 날씨가 얼마나 좋은지에 대해 이야기한다. <<He_ nun>> 멍하니 끄덕이며, <<if $weather is "clear" or $weather is "overcast">>침묵한다<<else>>어느 순간 눈을 깜박이고는 믿을 수 없다는 듯이 당신을 쳐다본다.<</if>>.
 	<<elseif $rng gte 31 and Time.season isnot "winter">>
-		You ask if <<he>> can help you with some schoolwork.
+		당신은 <<he>>에게 숙제를 도와줄 수 있냐고 물어본다.
 		<<if $bus is "schoollibrary">>
-			<<He>> wordlessly hands you a nearby <<print either("science textbook", "maths textbook", "English textbook", "history textbook", "comic book. <<He>> doesn't seem to notice what <<he>> gave you")>>.
+			<<He_ nun>> 가까이에 있는 책을 말없이 당신에게 건네준다. <<print either("과학 교과서다", "수학 교과서다", "영어 교과서다", "역사 교과서다", "만화책이다. <<He_ nun>> 자신이 뭘 건넸는지 모르는 것 같다.")>>.
 		<<else>>
-			<<He>> mumbles under <<his>> breath.
+			<<He_ nun>> 무언가를 숨죽여 중얼거린다.
 		<</if>>
 	<<elseif $rng gte 21>>
-		You make small talk. "Yeah," <<he>> mutters. You didn't ask a yes-or-no question.
+		당신은 잡담한다. "맞아," <<he_ ga>> 중얼거린다. 당신은 예-아니오로 답할 수 있는 걸 질문한 적이 없다.
 	<<elseif $rng gte 11 and $kylar.riddle isnot 1>>
 		<<set $kylar.riddle to 1>>
-		You tell Kylar a riddle you read about recently. <<He>> doesn't respond, but seems to think on it for a bit.
+		당신은 카일라에게 최근에 읽은 수수께끼를 알려준다. <<He_ nun>> 대답하지 않지만, 그것에 대해 잠시 생각해 보는 것 같다.
 	<<else>>
-		You ask if <<he>> likes to draw. <<He>> perks up a bit, but quickly quiets down.
+		당신은 <<he>>에게 그림 그리는 걸 좋아하냐고 묻는다. <<his_ yi>> 얼굴에 약간 생기가 돌지만, 그것은 이내 빠른 속도로 잠잠해진다.
 	<</if>>
 <</if>>
 <br><br>
@@ -2741,106 +2741,106 @@ You nod, and <<he>> blushes. You think <<hes>> going to turn you down, but <<he>
 
 <<if $kylar.play isnot 1>>
 	<<if $speech_attitude is "meek">>
-		"L-let's play a game," you say. "It'll be fun!"
+		"가-같이 게임하자," 당신이 말한다. "재미있을 거야!"
 	<<elseif $speech_attitude is "bratty">>
-		"Bet I could do better," you say. "I'll join in."
+		"내가 더 낫다는 것에 걸게," 당신이 말한다. "나도 할래."
 	<<else>>
-		"It has a multiplayer mode," you say. "Can I play?"
+		"멀티플레이 모드가 있네," 당신이 말한다. "해도 될까?"
 	<</if>>
 <<else>>
-	You ask if <<he>> would like to play again.
+	당신은 <<he>>에게 다시 플레이하고 싶은지 묻는다.
 <</if>>
 <<set $kylar.play to 1>>
 <br><br>
 
 <<if _kylarStatus.includes("Love")>>
-	Kylar nods. "I'll pay," <<he>> says.
+	카일라가 끄덕인다. "내가 낼게," <<he_ ga>> 말한다.
 <<else>>
-	Kylar looks away, but nods. "I-I'll pay," <<he>> mumbles.
+	카일라는 시선을 돌리지만, 끄덕인다. "내-내가 낼게," <<he_ nun>> 중얼거린다.
 <</if>>
 <<if $rng gte 81>>
-	<<He>> disappears beneath a pinball machine, and emerges with a bunch of coins.
+	<<He_ nun>> 핀볼 머신 아래로 사라지더니, 동전 한 뭉치를 가지고 나온다.
 <<elseif $rng gte 61>>
-	<<He>> presses <<his>> ear against a fruit machine, and moves down its case. <<He>> finds the right spot, and gives it a swift kick. You hear the jingle of coins flood out, which <<he>> promptly gathers.
+	<<He_ nun>> 슬롯 머신에 귀를 대더니, 케이스를 아래쪽으로 옮긴다. <<He_ nun>> 정확한 장소를 찾아 재빠르게 걷어찬다. 동전이 쏟아져 나오는 소리가 들리자, <<he_ ga>> 빠르게 그것들을 모은다.
 <<elseif $rng gte 41>>
-	<<He>> approaches a tourist sat at one of the fruit machines, <<if random(1, 2) is 1>>lifts his wallet,<<else>>lifts her purse,<</if>> takes out some coins, and puts it back without being noticed.
+	<<He_ nun>> 슬롯 머신에 앉아 있는 관광객에게 다가가더니, <<if random(1, 2) is 1>>그의 지갑을 들어<<else>>그녀의 지갑을 들어<</if>> 동전 몇 개를 꺼내고는 들키지 않고 제자리에 돌려놓는다.
 <<elseif $rng gte 21>>
-	<<He>> searches each machine for missed coins, until <<he>> scrounges enough for a game.
+	<<He_ nun>> 게임하기에 충분한 양이 모일 때까지 각 기계에 남겨진 동전들을 찾아 긁어모은다.
 <<else>>
-	<<He>> smacks the front of a coin pusher, and a handful of coins tumble down.
+	<<He_ ga>> 코인 푸셔의 앞면을 때리자, 동전 한 줌이 굴러떨어진다.
 <</if>>
 <br><br>
 
 <<rng>>
 <<if $rng gte 67>>
-	You play a cooperative first person shooter. You kill lots of <<print either("zombies", "pirates", "aliens", "soldiers", "criminals", "mutants")>>.
+	당신은 1인칭 협동 슈팅 게임을 한다. 당신은 많은 <<print either("좀비들을", "해적들을", "외계인들을", "병사들을", "범죄자들을", "돌연변이들을")>> 죽인다.
 	<<set $phase to 0>>
 <<elseif $rng gte 31>>
-	You play a cooperative <<print either("shmup","beat 'em up")>>.
+	당신은 협동형 <<print either("STG를","슈팅 게임을")>> 한다.
 	<<set $phase to 0>>
 <<else>>
-	You play the versus mode in a fighting game.
+	격투 게임의 대전 모드를 플레이한다.
 	<<set $phase to 1>>
 <</if>>
 
 <<rng>>
 <<if $rng gte 81>>
-	<<generatey2>><<generatey3>>"Ew, it's Kylar," says a <<person2>><<person>> behind you. <<He>> points at the arcade cabinet. "Remind me to never touch that one." <<His>> friend, a <<person3>><<person>>, laughs.
+	<<generatey2>><<generatey3>>"으, 카일라잖아," 당신 뒤의 <<person2>><<person_ 이>> 말한다. <<He_ nun>> 아케이드 게임기를 손가락질한다. "나중에 저거 절대로 만지지 말라고 알려줘." <<His_ yi>> 친구, <<person3>><<person_ 이>> 웃는다.
 	<br><br>
-	Kylar pretends not to hear them, but <<person1>><<his>> performance in the game drops.
+	카일라는 그들의 말이 들리지 않은 척하지만, <<person1>><<his_ yi>> 게임 실력이 떨어지고 있다.
 	<br><br>
 
-	<<link [[Ignore them too|Kylar Arcade Ignore]]>><</link>>
+	<<link [[무시한다|Kylar Arcade Ignore]]>><</link>>
 	<br>
 	<<link [[화를 낸다|Kylar Arcade Angry]]>><<status -10>><<npcincr Kylar love 3>><</link>><<lcool>><<gglove>>
 	<br>
 <<elseif $rng gte 61>>
 	<<if $phase is 0>>
-		It's close, but you manage to edge out a victory. Kylar is sweating by the end.
+		거의 다 왔다. 아슬아슬하게, 당신은 승리를 거머쥔다. 카일라는 끝에 가서는 땀을 흘리고 있다.
 		<br><br>
 		<<kylaroptions>>
 	<<else>>
-		Both Kylar and you are unfamiliar with the game, and you manage to button mash to victory.
+		카일라와 당신 둘 다 이 게임에 익숙하지 않다. 당신은 버튼을 연타해 승리한다.
 		<<ltrauma>><<trauma -2>>
 		<br><br>
 		<<kylaroptions>>
 	<</if>>
 <<elseif $rng gte 41>>
 	<<if $phase is 0>>
-		The game proves difficult, but Kylar is willing to pay for additional lives.
+		이 게임은 어려운 것으로 판명났지만, 카일라는 추가 라이프를 위해 기꺼이 돈을 지불한다.
 		<br><br>
 		<<kylaroptions>>
 	<<else>>
-		You end up messing around more than actually trying to fight each other.
+		당신은 결국 실제 싸움과는 다른 느긋한 마음으로 그것을 즐기게 된다.
 		<br><br>
 		<<kylaroptions>>
 	<</if>>
 <<elseif $rng gte 21>>
 	<<if $phase is 0>>
-		You put up a good fight, but the game gets the best of you.
+		당신은 괜찮게 싸웠지만, 게임이 당신을 압도한다.
 		<br><br>
 		<<kylaroptions>>
 	<<else>>
-		Both Kylar and you are unfamiliar with the game, but <<he>> manages to button mash to victory.
+		카일라와 당신 둘 다 이 게임에 익숙하지 않다. <<he_ nun>> 버튼을 연타해 승리한다.
 		<br><br>
 		<<kylaroptions>>
 	<</if>>
 <<else>>
 	<<if _kylarStatus.includes("Love")>>
 		<<if $phase is 0>>
-			<<Hes>> really good. You can't keep up, but <<he>> manages to carry you.
+			<<He_ nun>> 정말로 뛰어나다. 당신은 따라가지 못하지만, <<he_ ga>> 당신을 도와준다.
 			<br><br>
 			<<kylaroptions>>
 		<<else>>
-			<<Hes>> really good, and soon has you on the ropes.
+			<<He_ ga>> 정말로 뛰어나서, 당신은 곧 위기에 빠진다.
 			<br><br>
-			<<link [[Just have fun|Kylar Fun]]>><<npcincr Kylar love 1>><</link>><<glove>>
+			<<link [[그냥 즐긴다|Kylar Fun]]>><<npcincr Kylar love 1>><</link>><<glove>>
 			<br>
-			<<link [[Distract Kylar|Kylar Distract]]>><<npcincr Kylar lust 1>><</link>><<glust>><<promiscuous1>>
+			<<link [[카일라의 주의를 돌린다|Kylar Distract]]>><<npcincr Kylar lust 1>><</link>><<glust>><<promiscuous1>>
 			<br>
 		<</if>>
 	<<else>>
-		None of the skill you witnessed earlier is present. <<His>> hands are shaking too much.
+		당신이 이전에 목격한 기술을 단 하나도 찾아볼 수 없다. <<His_ yi>> 손이 너무 심하게 떨리고 있다.
 		<br><br>
 		<<link [[격려한다|Kylar Encourage]]>><<npcincr Kylar love 1>><</link>><<glove>>
 		<br>
@@ -2852,30 +2852,30 @@ You nod, and <<he>> blushes. You think <<hes>> going to turn you down, but <<he>
 :: Kylar Arcade Angry
 <<effects>><<run statusCheck("Kylar")>>
 
-You turn and face the pair.
+당신은 몸을 돌려 그 2인조를 마주한다.
 <<if $speech_attitude is "meek">>
-	"Leave <<person1>><<him>> alone," you say.
+	"<<person1>><<him_ rul>> 내버려 둬," 당신이 말한다.
 <<elseif $speech_attitude is "bratty">>
-	"Fuck off losers," you say.
+	"꺼져, 루저들아," 당신이 말한다.
 <<else>>
-	"Go away," you say. "Be a nuisance somewhere else."
+	"저리 가," 당신이 말한다. "시비는 다른 곳에서 걸지 그래."
 <</if>>
 <br><br>
 
-The pair laugh. "Or what?" the <<person2>><<person>> says. "You gonna fight for your <<person1>><<personsimple>>friend?"
+그들이 웃는다. "뭐 어쩔 건데?" <<person2>><<person_ 이>> 말한다. "네 <<person1>><<personsimple>>친구를 위해 싸우기라도 할 거야?"
 <br><br>
 
 <<if _kylarStatus.includes("Love")>>
-	"You better listen to <<phim>>," Kylar says from behind. "My <<girlfriend>> is really strong."
+	"<<phim>> 말을 듣는 게 좋을걸," 카일라가 뒤에서 말한다. "내 <<girlfriend>>는 정말로 강해."
 	<br><br>
 
-	The pair laugh harder, but don't try anything physical. They continue to mock Kylar until someone from the arcade staff shoos them out.
+	그들은 더 크게 웃음을 터뜨리지만, 행동으로 나서지는 않는다. 그들은 오락실 직원 중 하나가 그들을 쫓아낼 때까지 계속 카일라를 놀려댄다.
 	<br><br>
 <<else>>
-	The pair laugh harder, and continue to mock Kylar until someone from the arcade staff shoos them out.
+	그들은 더 크게 웃음을 터뜨린다. 그들은 오락실 직원 중 하나가 그들을 쫓아낼 때까지 계속 카일라를 놀려댄다.
 	<br><br>
 
-	"Th-thank you," Kylar manages once they're gone. <<person1>><<He>> doesn't make eye contact.
+	"고-고마워," 그들이 떠나자, 카일라는 어떻게든 입을 연다. <<person1>><<He_ nun>> 당신과 눈을 마주치지 않는다.
 	<br><br>
 <</if>>
 
@@ -2884,15 +2884,15 @@ The pair laugh. "Or what?" the <<person2>><<person>> says. "You gonna fight for 
 
 :: Kylar Arcade Ignore
 <<effects>>
-You ignore the pair. They say a few more disparaging things about Kylar, but they don't hang around long.
+당신은 그들을 무시한다. 그들은 카일라를 몇 번 더 깎아내리지만, 오래 머물지 않는다.
 <br><br>
 
 <<if $phase is 0>>
-	You lose the game.
+	당신은 졌다.
 <<else>>
-	You win the game, but there's no sense of achievement.
+	당신은 이겼지만, 성취감은 들지 않는다.
 <</if>>
-Kylar doesn't say anything.
+카일라는 아무 말도 하지 않는다.
 <br><br>
 
 <<endevent>><<npc Kylar>><<person1>>
@@ -2902,15 +2902,15 @@ Kylar doesn't say anything.
 <<effects>>
 
 <<if $speech_attitude is "meek">>
-	"It's okay," you say. "You don't need to be nervous."
+	"괜찮아," 당신이 말한다. "불안해할 필요 없어."
 <<elseif $speech_attitude is "bratty">>
-	"You better not be going easy on me," you say. "I'd be insulted."
+	"나를 너무 봐주지 않는 게 좋을 텐데," 당신이 말한다. "모욕적이거든."
 <<else>>
-	"You can do it," you say. "I've seen you play."
+	"넌 할 수 있어," 당신이 말한다. "네가 하는 걸 봤다고."
 <</if>>
 <br><br>
 
-Kylar's shaking eases a little, but you still win with ease.
+카일라의 떨림이 조금 가라앉지만, 당신은 여전히 쉽게 승리한다.
 <br><br>
 <<kylaroptions>>
 
@@ -2918,22 +2918,22 @@ Kylar's shaking eases a little, but you still win with ease.
 <<effects>>
 
 <<if $speech_attitude is "meek">>
-	"It's okay," you say. "Keep practising and one day you'll be good."
+	"괜찮아," 당신이 말한다. "계속 연습하면 언젠가는 잘할 수 있을 거야."
 <<elseif $speech_attitude is "bratty">>
-	"I thought you'd be better than this," you say. "Shame."
+	"네가 이것보다는 나을 줄 알았는데," 당신이 말한다. "부끄러운 줄 알아."
 <<else>>
-	"Maybe I should go easy on you," you say.
+	"어쩌면 내가 너를 봐줘야 할지도 모르겠네," 당신이 말한다.
 <</if>>
 <br><br>
 
-Kylar doesn't say anything, and you win with ease.
+카일라는 침묵하고, 당신은 쉽게 승리한다.
 <br><br>
 <<kylaroptions>>
 
 :: Kylar Fun
 <<effects>>
 
-You don't win, but have fun anyway. Kylar doesn't gloat.
+당신은 이기지 못했지만, 어쨌든 게임을 즐긴다. 카일라는 기뻐하지 않는다.
 <br><br>
 
 <<kylaroptions>>
@@ -2941,10 +2941,10 @@ You don't win, but have fun anyway. Kylar doesn't gloat.
 :: Kylar Distract
 <<effects>>
 
-You wrap an arm around Kylar's waist. <<His>> body freezes, then melts against you. <<He>> loses <<his>> sense of coordination, and can only offer a token defence as you turn things around and win the game.
+당신은 카일라의 허리를 팔로 감싼다. <<His_ yi>> 몸이 얼어붙고, 당신을 향해 녹아내린다. <<He_ nun>> 감각을 잃었고, 당신이 상황을 역전시켜 게임에서 이길 때까지 형식적인 방어만 하는 것이 고작이다.
 <<promiscuity1>>
 
-"Sorry," you say, and plant a kiss on <<his>> cheek. <<He>> doesn't care that <<he>> lost.
+"미안," 당신은 <<his_ yi>> 뺨에 키스하며 말한다. <<He_ nun>> 자신의 패배를 신경 쓰지 않는다.
 <br><br>
 
 <<kylaroptions>>
