@@ -79,7 +79,7 @@
 		<<kylaroptionsleave "manor">>
 	<<elseif $bus is "kylarmanor" and Time.hour lte 6>>
 		<<unset $kylar_action>>
-		카일라는 모니터를 바라본다. "자야겠어," <<he_ ga>> 말한다. <<He_ nun>> <<his_ yi>> 그는 그의 침대를 향해 걸어가더니, 옷을 그대로 입은 채 그 위에 드러눕는다. <<He_ nun>> 갈망 어린 시선으로 당신을 바라보지만, 아무 말도 하지 않는다.
+		카일라는 모니터를 바라본다. "자야겠어," <<he_ ga>> 말한다. <<He_ nun>> 침대를 향해 걸어가더니, 옷을 그대로 입은 채 그 위에 드러눕는다. <<He_ nun>> 갈망 어린 시선으로 당신을 바라보지만, 아무 말도 하지 않는다.
 		<br><br>
 
 		<<link [[카일라에게 잘 자라고 인사한다|Manor Kylar Goodnight]]>><</link>>
